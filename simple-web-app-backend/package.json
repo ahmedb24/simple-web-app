@@ -1,0 +1,35 @@
+{
+  "name": "simple-web-app",
+  "version": "1.0.0",
+  "description": "A simple web api for login and registeration",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && babel src -d dist",
+    "dev": "nodemon --exec babel-node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dzle",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-inline-dotenv": "^1.2.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "cuid": "^2.1.8",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.6",
+    "morgan": "^1.9.1",
+    "sanitize-html": "^1.20.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.15.1",
+    "nodemon": "^1.18.10"
+  }
+}
